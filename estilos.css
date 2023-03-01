@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600&display=swap');
+*{
+    font-family: "Merriweather Sans";
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.inicio{
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("imagenes/fondo_01.jpg");
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+}
+
+.inicio .contenedor{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.inicio .contenedor header{
+    padding: 30px;
+}
+
+/********** menu **********/
+.inicio .contenedor .menu{ 
+    list-style: none;
+    padding: 0;
+    background: #4b4b4b; 
+    width: 90%;
+    max-width: 1000px; 
+    margin: auto;
+    text-align: center;
+}
+.inicio .contenedor .menu li a{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    display: block;
+}
+.inicio .contenedor .menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.inicio .contenedor .menu li a:hover{
+    background: #6babf5;
+}
+
+.inicio .contenedor .info{
+    padding-bottom: 100px;
+}
+
+.inicio .contenedor .info h1{
+    font-size: 3rem;
+}
+.inicio .contenedor .info h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-top: -5px;
+    letter-spacing: 3px;
+}
+.inicio .contenedor .info .redes{
+    margin: 20px 0;
+}
+.inicio .contenedor .info .redes a{
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #6babf5;
+    border: 2px solid #6babf5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin: 0 5px;
+    transition: .3s;
+}
+.inicio .contenedor .info .redes a:hover{
+    color: #fff;
+    background-color: #48494a;
+    box-shadow: 0 0 10px #fff;
+}
+.inicio .contenedor .foto{
+    position: relative;
+}
+.inicio .contenedor .foto img{
+    max-width: 200px;
+    border-radius: 50%;
+    border: 5px solid #6babf5;
+    left: 50%;
+    top: -100px;
+}
+/***** Titulo *****/
+.perfil .contenedor .titulo{
+    font-family: "Merriweather Sans";
+    font-size: 2rem;
+}
+
+/***** Perfil*****/
+.perfil{
+    background-color: #c6cacf;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.perfil .contenedor{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.perfil .contenedor h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.perfil .contenedor .especial{
+    color: #1320dc;
+    font-weight: bold;
+    margin-top: 15px;
+    
+}
+.perfil .contenedor p{
+    margin-top: auto;
+    color: #48494a;
+}
+.perfil .contenedor .fila{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+}
+.perfil .contenedor .fila .columna{
+    width: 45%;
+}
+.perfil .contenedor .fila .columna span{
+    display: block;
+    font-weight: bold;
+    margin: 7px 0;
+}
+/***** Habilidades *****/
+.habilidades{
+    padding: 80px 0 100px 0;
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.3)),
+    url("imagenes/fondo_02.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    color: #fff;
+}
+.habilidades .contenedor{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.habilidades .contenedor h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.habilidades .contenedor .fila{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+/***** Experiencia *****/
+.experiencia{
+    background-color: #c6cacf;
+    padding: 140px 0 100px 0;
+    text-align: center;
+}
+.experiencia .contenedor{
+    max-width: 1000px;
+    margin: auto;
+    padding: 0 10px;
+}
+.experiencia .contenedor h3{
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.experiencia .contenedor .informacion{
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+.experiencia .contenedor .informacion .columna{
+    width: 45%;
+}
+/*** Corregir el color porque no se ve bien***/
+.experiencia .contenedor .informacion .columna .titulo{
+    display: inline-block;
+    color: #1320dc;
+    font-weight: bold;
+    
+    padding: 10px;
+}
+/*******/
+
+/***** Contacto *****/
+.contacto .contenedor {
+    background-color: #000;
+}
+.contacto .contenedor h2{
+    color: #fff;
+    text-align: center;
+    padding: 80px 0 20px 0;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+.formulario{
+    background-color: #6babf5;
+    width: 400px;
+    position: absolute;
+    
+    left: 50%;
+    transform: translate(-50%, 10%);
+    box-shadow: 7px 13px 37px rgba(0,0,0,.3);
+}
+.contacto{
+    padding: .8rem;
+    overflow: hidden;
+}
+.contacto label, .contacto input, .contacto textarea{
+    display: block;
+    width: 95%;
+    margin-bottom: 8px;
+}
+.contacto label{
+    font-weight: 500;
+}
+.contacto textarea{
+    min-height: 100px;
+}
